@@ -1,0 +1,68 @@
+<div class="main">   
+    <div class="container">   
+        <div class="form"  [formGroup]="loginform">   
+            <div class="loginpage">  
+                <div class="pagepadding">   
+                    <div class="page">   
+                        <div class="backlogin"><span class="material-symbols-outlined">   
+                                keyboard_backspace   
+                            </span>   
+                            <p> Go to <a href="#">Home Page</a></p>   
+                        </div>   
+                        <div class="headlogin">   
+                            <h2>Log in Your account.</h2>   
+                            <p>You are a step away from logging in.<br>Give your 'sign in'credentials below to enter.</p>   
+                        </div>   
+                        <div class="inputlogin">   
+                            <div class="row2">   
+                                <!--  -->   
+                                <div class="input-container">   
+                                    <span class="material-symbols-outlined icon">mail</span>   
+                                    <input class="input-field" type="email" placeholder="Email Address"name="usrnm" formControlName="email">   
+                                </div>   
+                            </div>   
+                          <!--  -->  
+                               <div class="row2">  
+                                <div class="input-container">   
+                                    <span class="material-symbols-outlined icon">lock</span>   
+                                    <input class="input-field" type="password" placeholder="Password" name="usrnm" formControlName="password">   
+                                </div>   
+                               </div>  
+                               <div class="checkbox">  
+                                <div class="chk">  
+                                <input type="checkbox" id="chkbox" name="chkbox" value="true">  
+                                <label for="chkbx">Remember Me</label><br>  
+                               </div>  
+                               <div class="fp">  
+                                <a href="forgot">Forgot Password?</a>  
+                               </div>  
+                               </div>  
+                            <div class="buttonlink">   
+                                <button type="button" class="button1" (click)="login(loginform.value)">Get Started</button>   
+ 
+                                <div class="link">   
+                                    <p>Not a member ?  </p><a href="">Register Now<span class="material-symbols-outlined">   
+                                        east   
+                                    </span> </a>   
+ 
+                                    <!-- <p>Are you a member ? <span><a>Login now <span class="material-symbols-outlined">    
+                    east    
+                    </span></a></span></p> -->   
+                                </div>   
+                            </div>   
+                            <div class="paralogin">Connect with</div>   
+ 
+                            <div class="buttonlogin">   
+                                <button class="button2"><i class="fab fa-facebook-f"></i> Facebook</button><button   
+                                    class="button3"><i class="fab fa-google"></i>google</button>   
+                            </div>   
+                        </div>   
+                    </div>   
+                </div>   
+            </div>   
+        </div>   
+    </div>   
+</div>
+<header *ngIf="text2" class="message2">
+    {{text2}}
+</header>

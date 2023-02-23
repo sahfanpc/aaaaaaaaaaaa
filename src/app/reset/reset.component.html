@@ -1,0 +1,29 @@
+<div class="main">
+    <div class="form">
+        <div class="loginpage">
+            <div class="pagepadding">
+                <div class="page">
+                  
+                    <div class="headlogin">
+                      
+                        <img src="\assets\shield.jpg">
+                        <p>Please enter your new password</p>
+                        
+                    </div>
+        
+                    <section>
+
+                    <form [formGroup]="resetform">
+                        <input type="password" class="otp-input" placeholder="password" formControlName="password">
+                        <div class="buttonlink">
+                            <button type="button" (click)="submit(resetform.value)" class="button1">Forgot Password</button>
+                        </div>
+                    </form>
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

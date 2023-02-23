@@ -1,0 +1,47 @@
+
+
+.cardtext1 {
+    margin: 1em auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    bottom: 20px;
+}
+
+.head {
+    display: flex;
+    position: relative;
+    /* bottom: 40px; */
+}
+
+.headicon {
+    width: 13%;
+}
+
+.headicon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.headtext {
+    margin-top: -2px;
+}
+
+.headtext .bhead p {
+    font-size: 24px;
+}
+
+.headtext .bhead p mark {
+    color: orange;
+    background: none;
+}
+
+.headtext .shead small {
+    font-size: 8px;
+    color: rgb(151, 141, 141);
+
+}

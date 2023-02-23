@@ -1,0 +1,155 @@
+
+<div class="main">
+    <div class="container">
+        <div class="display-cards">
+            <div class="cardtext1">          
+                <div class="card">
+                    <div class="card1">
+                        <div class="cardimg">
+                            <img src="\assets\card1.jpeg">
+                        </div>
+                        <div class="cardtext">
+                            <div class="cardtextstep">Step 1:</div>
+                            <div class="cardtexthead">
+                                <h3>Post Your Property Add</h3>
+                            </div>
+                            <div class="cardtextpara"><small>Enter all details like locality name, amenities
+                                    etc.along with aploading photos</small></div>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="cardimg">
+                            <img src="\assets\card2.jpeg">
+                        </div>
+                        <div class="cardtext">
+                            <div class="cardtextstep">Step 2:</div>
+                            <div class="cardtexthead">
+                                <h3>Check Responses on Dashboard</h3>
+                            </div>
+                            <div class="cardtextpara"><small>Get access to Buyer/Tanent condact details & connect
+                                    easily</small></div>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="cardimg">
+                            <img src="\assets\card3.jpeg">
+                        </div>
+                        <div class="cardtext">
+                            <div class="cardtextstep">Step 3:</div>
+                            <div class="cardtexthead">
+                                <h4>Sell/Rent faster with instant connect</h4>
+                            </div>
+                            <div class="cardtextpara"><small>Negotiate with your prostective Buyer/Tanent & mutually
+                                    close the deal</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form class="form" [formGroup]="registerform">
+            <div class="loginpage">
+                <div class="pagepadding">
+                    <div class="page">
+                        <div class="backlogin">
+                            <span class="material-symbols-outlined">
+                                keyboard_backspace
+                            </span>
+                            <p> Go to <a href="#">Home Page</a></p>
+                        </div>
+                        <div class="headlogin">
+                            <h2>Create Your Account.</h2>
+                            <p>Help us know you better,to let us create an account for you.</p>
+                        </div>
+                        <div class="inputlogin">
+                            <div class="row1">
+                                <!--  -->
+                                <div class="input-container fname">
+                                    <span class="material-symbols-outlined icon">person</span>
+                                    <input class="input-field" type="text" placeholder="First Name" formControlName="fname">
+                                </div>
+                                <!--  -->
+                                <div class="input-container lname">
+                                    <span class="material-symbols-outlined icon">person</span>
+                                    <input class="input-field" type="text" placeholder="Last Name"formControlName="lname">   
+                                </div> 
+                            </div>  
+                        
+                            <div class="row2">   
+                                <!--  -->   
+                                <div class="input-container email">   
+                                    <span class="material-symbols-outlined icon">mail</span>   
+                                    <input class="input-field" type="email" placeholder="Email Address" formControlName="email">   
+                                </div>   
+                                <!--  -->   
+                            </div>   
+                            <div class="row34">   
+                                <!--  -->   
+                                <!-- <div class="row3"> -->   
+                                <div class="input-container3 phonecode">   
+                                    <input class="input-field3" type="number" placeholder="+1" id="numberbold" formControlName="phonecode">   
+                                </div>   
+                                <!-- </div> -->   
+                                <!--  -->   
+                                <!-- <div class="row4"> -->   
+                                <div class="input-container4 number">   
+                                    <input class="input-field3" type="number" placeholder="Phone Number"formControlName="number">   
+                                    <!-- </div> -->   
+                                </div>   
+                                <!--  -->   
+                            </div>   
+                            <div class="row5">   
+                                <!--  -->   
+ 
+                                <!--  -->   
+                                <div class="input-container password">   
+                                    <span class="material-symbols-outlined icon">lock</span>   
+                                    <input class="input-field" id="password" type="password" placeholder="Password"formControlName="password">   
+                                </div>   
+                                <!--  -->   
+                                <div class="input-container conformpassword">   
+                                    <span class="material-symbols-outlined icon">lock</span>   
+                                    <input class="input-field" id="cpassword" type="password" placeholder="Confirm Password" formControlName="conformpassword">   
+                                </div>   
+                                <!--  -->  
+                            </div>   
+                            <div class="row">   
+                            </div>   
+                            <div class="buttonlink">   
+                                <button type="button" (click)="getstart(registerform.value)" class="button1">Get Started</button>   
+ 
+                                <div class="link">   
+                                    <p>Are you a member ?</p> <a href="login">Login Now <span class="material-symbols-outlined icn">   
+                                        east   
+                                    </span> </a>   
+ 
+                                    <!-- <p>Are you a member ? <span><a>Login now <span class="material-symbols-outlined">    
+                    east    
+                    </span></a></span></p> -->   
+                                </div>   
+                            </div>   
+                            <div class="paralogin">Connect with</div>   
+ 
+                            <div class="buttonlogin">   
+                                <button class="button2"><i class="fab fa-facebook-f"></i> <span>Facebook</span></button><button  class="button3"><i class="fab fa-google"></i><span>Google</span></button>   
+                            </div>   
+                        </div>   
+                    </div>   
+                </div>   
+            </div>   
+   
+        </form>
+        </div>
+</div>
+<header *ngIf="text" class="message">
+{{text}}
+<aside class="para">please check your name</aside>
+                    <aside class="para">email and fill fully</aside>
+</header>
+<header *ngIf="text1" class="message1">
+    {{text1}}
+    <aside class="para1">please check your password</aside>
+                        <aside class="para1">and confirm password</aside>
+</header>
+<header *ngIf="text2" class="message2">
+{{text2}}
+</header>
